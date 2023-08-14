@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: brown;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    input {
+        padding: 10px 20px;
+        font-size: 20px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <button name="minus" onclick="count(event)">-</button>
+
+    <input id="counter" value="1" type="number" disabled> 
+    <!-- <input id="counter-type" value="toq" type="text" disabled>  -->
+
+    <button name="plus" onclick="count(event)">+</button>
+    
+
+    <script>
+
+        const input = document.getElementById("counter")
+
+        function count({target}) {
+            if (target.name === "minus" && input.value > 0) {
+                input.value -= 1
+            }
+            if (target.name === "plus") {
+                input.value = Number(input.value) + 1
+            }
+        }
+
+    </script>
+</body>
+</html>

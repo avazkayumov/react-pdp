@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-trello_js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title_container">
+            <h3 class="title">Backlog Tasks</h3>
+            <div class="infos_count">0</div>
+        </div>
+
+        <div class="infos_container_append">
+
+        </div>
+
+        <div class="plus_button">
+            <button class="plus--btn" onclick="tasks.showForm()"> <img src="./Icon-plus.svg" alt=""> </button>
+        </div>
+
+
+        <div class="form_container">
+            <input class="form--input" value="" type="text">
+
+            <div class="form_btns">
+                <button class="cancel--btn" onclick="tasks.closeForm()">Cancel</button>
+                <button class="save--btn" onclick="tasks.saveInfo()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./fp-script.js"></script> -->
+    <script src="./oop-script.js"></script>
+</body>
+</html>

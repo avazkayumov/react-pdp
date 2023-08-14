@@ -1,0 +1,2 @@
+hamma elementda addEventListener() method bor
+addEventListener() ikkita parament oladi

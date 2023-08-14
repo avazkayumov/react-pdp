@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px;
+}
+
+.selector {
+    width: 450px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.selector .option {
+    width: 50%;
+    text-align: center;
+    line-height: 40px; 
+    cursor: pointer;
+}
+
+.option-background {
+    width: 50%;
+    height: 40px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: -1;
+}

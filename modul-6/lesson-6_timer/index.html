@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>TIMER</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./fp-script.js" defer></script> -->
+    <script src="./oop-script.js" defer></script>
+</head>
+<body>
+    <div class="timer_container">
+        <p class="timer_count">
+            <span class="hours">00</span>
+            <span>:</span> 
+            <span class="minutes">00</span> 
+            <span>:</span> 
+            <span class="seconds">00</span>
+        </p>
+        <div class="buttons">
+            <button class="start" onclick="timer.start()">START</button>
+            <div class="stop_btns">
+                <button class="stop" onclick="timer.stop()">STOP</button>
+                <button class="reset" onclick="timer.reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

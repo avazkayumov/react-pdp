@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="./addpoduct-login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-input-container">
+            <form id="addproduct-form">
+                <h1>Add Product</h1>
+                <input name="title" type="text" placeholder="Product Name">
+                <input name="price" type="text" placeholder="Product Price">
+                <input name="image" type="file" placeholder="Product Image">
+                <textarea name="description" placeholder="Product Info"></textarea>
+                <div class="buttons">
+                    <a href="#" onclick="product.addProduct()">Add</a>
+                    <a style="background-color: red;" href="/index.html">Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+    <script src="./scripts/product.js"></script>
+    <script src="./scripts/index.js"></script>
+</html>
